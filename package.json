@@ -6,8 +6,12 @@
     "lint": "eslint src",
     "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|mdx|graphql|vue)\"",
     "format": "yarn prettier --write",
-    "validate": "yarn lint && yarn prettier --list-different",
-    "precommit": "lint-staged"
+    "validate": "yarn lint && yarn prettier --list-different"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "dependencies": {
     "@emotion/core": "^10.0.10",
