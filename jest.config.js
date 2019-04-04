@@ -6,4 +6,8 @@ module.exports = {
   ],
   snapshotSerializers: ['jest-emotion'],
   collectCoverageFrom: ['**/src/**/*.js'],
+  watchPlugins: [
+    'jest-watch-typeahead/filename',
+    'jest-watch-typeahead/testname',
+  ],
 };
