@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+.emotion-0 {
+  color: red;
+}
+
+<div
+  class="emotion-0 emotion-1"
+  data-testid="input-error"
+>
+  <p>
+    This is an error
+  </p>
+</div>
+`;

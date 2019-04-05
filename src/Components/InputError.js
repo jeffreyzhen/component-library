@@ -6,12 +6,14 @@ const StyledError = styled.div`
   color: red;
 `;
 
-const Error = ({ children }) => (
-  <StyledError>
+export const InputError = ({ children }) => (
+  <StyledError data-testid="input-error">
     <p>{children}</p>
   </StyledError>
 );
 
-Error.propTypes = {
+InputError.propTypes = {
   children: PropTypes.string.isRequired,
 };
+
+export default InputError;
