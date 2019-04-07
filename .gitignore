@@ -4,3 +4,4 @@ node_modules
 bundle.js
 coverage
 dist
+yarn-error.log
