@@ -33,7 +33,6 @@ export const InputRadio = ({
 
 InputRadio.defaultProps = {
   activeSelection: '',
-  onChange: () => {},
 };
 
 InputRadio.propTypes = {
@@ -41,7 +40,7 @@ InputRadio.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
-  onChange: PropTypes.func,
+  onChange: PropTypes.func.isRequired,
   activeSelection: PropTypes.string,
 };
 
