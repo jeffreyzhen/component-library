@@ -2,7 +2,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text } from '@storybook/addon-knobs';
 
-import { InputRadio } from '../src/Components/InputRadio';
 import { InputRadioGroup } from '../src/Components/InputRadioGroup';
 
 const yesInputRadio = {
@@ -20,8 +19,5 @@ const noInputRadio = {
 };
 
 storiesOf('InputRadioGroup', module).add('default', () => (
-  <InputRadioGroup>
-    <InputRadio {...yesInputRadio}>Yes</InputRadio>
-    <InputRadio {...noInputRadio}>No</InputRadio>
-  </InputRadioGroup>
+  <InputRadioGroup>{[yesInputRadio, noInputRadio]}</InputRadioGroup>
 ));
